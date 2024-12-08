@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: freshrss
+    env: docker
+    repo: https://github.com/Rickied1/FreshRSS
+    branch: edge
+    dockerfilePath: Docker/freshrss/Dockerfile
+    buildCommand: docker build -t freshrss -f Docker/freshrss/Dockerfile Docker/freshrss
